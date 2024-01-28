@@ -1,0 +1,40 @@
+/* Global styles */
+body {
+    font-family: Arial, serif;
+    font-size: 16px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Layout */
+.api-key {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.api-key input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.api-key p {
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
