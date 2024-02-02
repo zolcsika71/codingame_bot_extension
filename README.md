@@ -4,21 +4,9 @@ This extension can be used to pass Codingame exercise automatically.
 
 Clone this repository, then open Google Chrome, go to `chrome://extensions` and [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/)
 
-https://github.com/Aschen/codingame-solver/assets/4447392/2e4b105d-7605-4791-8785-dd4b09e4a9ca
-
-<img src="assets/image.png" width="400">
-
-## Why?
-
-From my point of view, asking to solve coding challenges that have no relation to the real problems encountered in the professional environment has never been an effective method of evaluating a candidate.
-
-This is even less the case since the arrival of LLMs like GPT-4, if these tools are capable of solving these problems for us then shouldn't we focus on higher level problems and let them do their thing?
-
-It's as if a lax firm made a multiple choice test on knowledge of the penal code to evaluate for the position as a prosecutor for a trial. Not very relevant.
-
 ## How it works
 
-This is a Chrome extension with the usual 3 parts communicating with each other:
+This is a Chrome extension with the usual three parts communicating with each other:
 
 - extension popup active when clicked
 - service worker running in the background
