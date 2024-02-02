@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codingame Bot</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codingame worker</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 <h1>Codingame Solver</h1>
-<h2>(Codingame Bot)</h2>
+<h2>(BOT)</h2>
 
 <div class="api-key">
-    <label for="apiKey">OpenAI API key</label>
-    <input id="apiKey" type="text" placeholder="OpenAI API key">
-    <button id="resetApiKey">Reset</button>
-    <p id="apiKeyStatus"></p>
+  <label for="apiKey">OpenAI API key:</label>
+  <input
+          id="apiKey"
+          type="text"
+          placeholder="Enter OpenAI API key"
+  />
+  <button id="resetApiKey">Reset</button>
 </div>
+<p id="apiKeyStatus"></p>
 
 <div class="buttons">
-    <button id="solveCoding">Coding Challenge</button>
-    <button id="solveQCM">QCM</button>
-    <button id="solveGeneric">Generic</button>
+  <button id="solveCoding" class="btn-solve btn-coding">Coding Challenge</button>
+  <button id="solveQCM" class="btn-solve btn-qcm">QCM</button>
+  <button id="solveGeneric" class="btn-solve btn-generic">Generic</button>
 </div>
 
-<script src="index.js"></script>
+<script type="module" crossorigin src="index.js"></script>
 </body>
-
 </html>

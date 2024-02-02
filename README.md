@@ -49,6 +49,3 @@ Roughly the same kind of workflow with the element picker but then the answer is
 
 Take the entire text body and try to find an answer to any question inside, then write the result in the console.
 
-## Naming
-
-"Jaime la nature" was the name of the Chrome extension to cheat at the informatic cultur exam at Epitech. This exam was a huge QCM so either you had edeitic memory or like 80% of the student you have cheat to succeed (but don't get caught!).

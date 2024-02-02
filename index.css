@@ -1,40 +1,93 @@
 /* Global styles */
 body {
-    font-family: Arial, serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h1, h2 {
     text-align: center;
+    color: #333;
 }
 
-button {
-    padding: 10px;
-    border-radius: 5px;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Layout */
+/* Input and status styling */
 .api-key {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.api-key input {
+.api-key label {
     margin-right: 10px;
-    padding: 5px;
 }
 
-.api-key p {
-    margin-left: 10px;
+.api-key input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
+#apiKeyStatus {
+    color: red;
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Specific button styles */
+.btn-solve {
+    margin-right: 10px;
+    flex: 1;
+}
+
+.btn-coding {
+    background: #4caf50;
+}
+
+.btn-qcm {
+    background: #f44336;
+}
+
+.btn-generic {
+    background: #2196f3;
+}
+
+/* Layout for buttons */
 .buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .api-key, .buttons {
+        flex-direction: column;
+    }
+
+    .api-key input, .btn-solve {
+        margin-bottom: 10px;
+    }
+
+    .btn-solve {
+        margin-right: 0;
+    }
 }
